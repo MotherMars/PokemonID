@@ -3,62 +3,62 @@
 [0]
 Name = Normal
 InternalName = NORMAL
-Weaknesses = FIGHTING
-Immunities = GHOST
+Weaknesses = FIGHTING,WAR,OMEGA
+Immunities = GHOST,SPECTRAL
 #-------------------------------
 [1]
 Name = Fighting
 InternalName = FIGHTING
-Weaknesses = FLYING,PSYCHIC,FAIRY,METAL
-Resistances = ROCK,BUG,DARK,STEEL
+Weaknesses = FLYING,PSYCHIC,ARCANE,FAIRY,MYTHIC,SOUND,OMEGA
+Resistances = ROCK,CRYSTAL,BUG,INSECT,DARK,CHAOS,STEEL
 #-------------------------------
 [2]
 Name = Flying
 InternalName = FLYING
-Weaknesses = ROCK,ELECTRIC,ICE,NATURE
-Resistances = FIGHTING,BUG,GRASS
-Immunities = GROUND
+Weaknesses = ROCK,CRYSTAL,ELECTRIC,ICE,NATURE,CRYO,OMEGA
+Resistances = FIGHTING,WAR,BUG,INSECT,GRASS
+Immunities = GROUND,EARTH
 #-------------------------------
 [3]
 Name = Poison
 InternalName = POISON
-Weaknesses = GROUND,PSYCHIC,PLASMA
-Resistances = FIGHTING,POISON,BUG,GRASS,FAIRY,NATURE
+Weaknesses = GROUND,EARTH,PSYCHIC,ARCANE,PLASMA,LIGHT,ORDER,OMEGA
+Resistances = FIGHTING,WAR,POISON,BUG,INSECT,GRASS,MYTHIC,NATURE
 #-------------------------------
 [4]
 Name = Ground
 InternalName = GROUND
-Weaknesses = WATER,GRASS,ICE,NATURE,WIND
-Resistances = POISON,ROCK,MAGMA,PLASMA
+Weaknesses = WATER,GRASS,ICE,NATURE,WIND,CRYO,OMEGA
+Resistances = POISON,ROCK,CRYSTAL,MAGMA,PLASMA
 Immunities = ELECTRIC
 #-------------------------------
 [5]
 Name = Rock
 InternalName = ROCK
-Weaknesses = FIGHTING,GROUND,STEEL,WATER,GRASS,MAGMA,NATURE
-Resistances = NORMAL,POISON
+Weaknesses = FIGHTING,WAR,GROUND,EARTH,STEEL,METAL,WATER,AQUA,GRASS,MAGMA,NATURE,OMEGA
+Resistances = NORMAL,POISON,LIGHT,ORDER,SOUND,INSECT
 Immunities = FIRE,FLYING,BUG,DRAGON
 #-------------------------------
 [6]
 Name = Bug
 InternalName = BUG
-Weaknesses = FLYING,ROCK,FIRE,PLASMA
-Resistances = FIGHTING,GROUND,GRASS
+Weaknesses = FLYING,ROCK,CRYSTAL,FIRE,MAGMA,OMEGA
+Resistances = FIGHTING,WAR,GROUND,EARTH,GRASS,NATURE,SOUND
 Immunities = POISON
 #-------------------------------
 [7]
 Name = Ghost
 InternalName = GHOST
-Weaknesses = GHOST,DARK,LIGHT,WIND
-Resistances = POISON,BUG,MAGMA
-Immunities = NORMAL,FIGHTING
+Weaknesses = GHOST,SPECTRAL,DARK,CHAOS,LIGHT,ORDER,VOID,OMEGA
+Resistances = POISON,INSECT,MAGMA,FIRE
+Immunities = NORMAL,FIGHTING,BUG
 #-------------------------------
 [8]
 Name = Steel
 InternalName = STEEL
-Weaknesses = FIGHTING,GROUND,FIRE,MAGMA,PLASMA
-Resistances = NORMAL,FLYING,ROCK,BUG,STEEL,GRASS,PSYCHIC,ICE,DRAGON
-Immunities = POISON
+Weaknesses = FIGHTING,WAR,GROUND,EARTH,FIRE,MAGMA,PLASMA,CRYO,SOUND,CYBER,OMEGA
+Resistances = NORMAL,FLYING,ROCK,CRYSTAL,INSECT,STEEL,GRASS,PSYCHIC,ARCANE,ICE,DRAGON
+Immunities = POISON,BUG
 #-------------------------------
 [9]
 Name = ???
@@ -68,102 +68,209 @@ IsPseudoType = true
 [10]
 Name = Fire
 InternalName = FIRE
-Weaknesses = GROUND,ROCK,WATER,AQUA,WIND
+Weaknesses = GROUND,EARTH,ROCK,CRYSTAL,WATER,AQUA,OMEGA
 Resistances = BUG,STEEL,FIRE,GRASS,ICE,FAIRY,NATURE,METAL
 #-------------------------------
 [11]
 Name = Water
 InternalName = WATER
-Weaknesses = GRASS,ELECTRIC,NATURE,WIND,PLASMA
+Weaknesses = GRASS,ELECTRIC,NATURE,WIND,PLASMA,OMEGA
 Resistances = STEEL,FIRE,WATER,ICE,MAGMA,METAL
 #-------------------------------
 [12]
 Name = Grass
 InternalName = GRASS
-Weaknesses = FLYING,POISON,BUG,FIRE,MAGMA,PLASMA
-Resistances = GROUND,WATER,GRASS,ELECTRIC
+Weaknesses = FLYING,POISON,TOXIC,BUG,FIRE,MAGMA,PLASMA,OMEGA
+Resistances = GROUND,EARTH,WATER,GRASS,ELECTRIC,SOUND
+Immunities = LIGHT,ORDER
 #-------------------------------
 [13]
 Name = Electric
 InternalName = ELECTRIC
-Weaknesses = GROUND,WIND,PLASMA
-Resistances = FLYING,STEEL,ELECTRIC,METAL
+Weaknesses = GROUND,EARTH,WIND,PLASMA,SOUND,CYBER,OMEGA
+Resistances = FLYING,STEEL,ELECTRIC,METAL,WIND
 #-------------------------------
 [14]
 Name = Psychic
 InternalName = PSYCHIC
-Weaknesses = BUG,GHOST,DARK,LIGHT
-Resistances = FIGHTING,PSYCHIC,NORMAL
+Weaknesses = BUG,GHOST,SPECTRAL,DARK,CHAOS,LIGHT,ORDER,OMEGA
+Resistances = FIGHTING,WAR,PSYCHIC,NORMAL
 #-------------------------------
 [15]
 Name = Ice
 InternalName = ICE
-Weaknesses = FIGHTING,ROCK,STEEL,FIRE
-Resistances = ICE,MAGMA,NATURE
+Weaknesses = FIGHTING,WAR,ROCK,CRYSTAL,STEEL,FIRE,OMEGA
+Resistances = ICE,MAGMA,NATURE,WIND
 #-------------------------------
 [16]
 Name = Dragon
 InternalName = DRAGON
-Weaknesses = ICE,DRAGON,FAIRY,LIGHT
+Weaknesses = ICE,DRAGON,WYVERN,FAIRY,LIGHT,ORDER,CRYO,OMEGA
 Resistances = FIRE,WATER,GRASS,ELECTRIC,AQUA
 #-------------------------------
 [17]
 Name = Dark
 InternalName = DARK
-Weaknesses = FIGHTING,BUG,FAIRY,PLASMA
+Weaknesses = FIGHTING,WAR,BUG,FAIRY,LIGHT,ORDER,OMEGA
 Resistances = GHOST,DARK
-Immunities = PSYCHIC,LIGHT
+Immunities = PSYCHIC
 #-------------------------------
 [18]
 Name = Fairy
 InternalName = FAIRY
-Weaknesses = POISON,STEEL,WIND
-Resistances = FIGHTING,BUG,DARK,LIGHT
-Immunities = DRAGON
+Weaknesses = POISON,TOXIC,STEEL,METAL,WIND,CYBER,OMEGA
+Resistances = FIGHTING,BUG,DARK,LIGHT,ORDER,CHAOS
+Immunities = DRAGON,WYVERN
 #-------------------------------
 [19]
 Name = Magma
 InternalName = MAGMA
-Weaknesses = GROUND,ICE,DRAGON,AQUA
-Resistances = STEEL,GRASS,ROCK,BUG,NATURE,METAL
-Immunities = WATER 
+Weaknesses = GROUND,EARTH,ICE,DRAGON,WYVERN,OMEGA
+Resistances = STEEL,GRASS,ROCK,CRYSTAL,BUG,NATURE,METAL
+Immunities = WATER,AQUA
 #-------------------------------
 [20]
 Name = Light
 InternalName = LIGHT
-Weaknesses = NORMAL,FAIRY
-Resistances = PSYCHIC,DRAGON,GHOST,ICE
-Immunities = DARK
+Weaknesses = GRASS,LIGHT,ROCK,CRYSTAL,WATER,OMEGA
+Resistances = GHOST,POISON,TOXIC,PSYCHIC,SPECTRAL,VOID
+Immunities = DARK,CHAOS
 #-------------------------------
 [21]
 Name = Nature
 InternalName = NATURE
-Weaknesses = FIRE,MAGMA,ICE,POISON,PLASMA
+Weaknesses = FIRE,MAGMA,ICE,CRYO,POISON,TOXIC,PLASMA,OMEGA
 Resistances = WATER,FLYING,STEEL,FAIRY
-Immunities = ROCK,GROUND
+Immunities = ROCK,CRYSTAL,GROUND,EARTH,LIGHT,ORDER
 #-------------------------------
 [22]
 Name = Air
 InternalName = WIND
-Weaknesses = DARK,LIGHT,DRAGON,METAL
-Resistances = ELECTRIC,NATURE,FAIRY,GHOST,GROUND
+Weaknesses = DARK,CHAOS,LIGHT,ORDER,METAL,OMEGA
+Resistances = ELECTRIC,NATURE,FAIRY,MYTHIC,GHOST,SPECTRAL,GROUND
 Immunities = GRASS,FLYING
 #-------------------------------
 [23]
 Name = Metal
 InternalName = METAL
-Weaknesses = ICE,GROUND,FIRE,MAGMA,PLASMA
-Resistances = NORMAL,FLYING,ROCK,BUG,STEEL,GRASS,PSYCHIC,FIGHTING
+Weaknesses = ICE,GROUND,EARTH,FIRE,MAGMA,PLASMA,SOUND,CYBER,OMEGA
+Resistances = NORMAL,FLYING,ROCK,CRYSTAL,BUG,STEEL,GRASS,PSYCHIC,FIGHTING
 Immunities = POISON,WIND
 #-------------------------------
 [24]
 Name = Aqua
 InternalName = AQUA
-Weaknesses = GRASS,ELECTRIC,NATURE,FLYING
+Weaknesses = GRASS,ELECTRIC,NATURE,FLYING,OMEGA
 Resistances = STEEL,FIRE,WATER,ICE,MAGMA,METAL
 #-------------------------------
 [25]
 Name = Plasma
 InternalName = PLASMA
-Weaknesses = GROUND,WIND,ROCK,WATER,AQUA
+Weaknesses = GROUND,EARTH,WIND,ROCK,CRYSTAL,WATER,AQUA,OMEGA
 Resistances = FLYING,STEEL,ELECTRIC,METAL
+#-------------------------------
+[26]
+Name = Cryo
+InternalName = CRYO
+Weaknesses = FIGHTING,WAR,ROCK,CRYSTAL,FIRE,OMEGA
+Resistances = ICE,MAGMA,NATURE,SOUND,WIND
+#-------------------------------
+[27]
+Name = Sound
+InternalName = SOUND
+Weaknesses = BUG,INSECT,ICE,CRYO,ELECTRIC,PLASMA,SOUND,OMEGA
+Resistrances = STEEL,WATER,AQUA,FAIRY,MYTHIC,METAL
+#-------------------------------
+[28]
+Name = Cyber
+InternalName = CYBER
+Weaknesses = FIRE,MAGMA,WATER,AQUA,POISON,TOXIC,SOUND,OMEGA
+Resistances = ELECTRIC,PLASMA,STEEL,METAL,PSYCHIC,ARCANE
+Immunities = FAIRY,MYTHIC
+#-------------------------------
+[29]
+Name = Void
+InternalName = VOID
+Weaknesses = LIGHT,ORDER,FIRE,MAGMA,ARCANE,OMEGA
+Resistances = DARK,CHAOS,GHOST,SPECTRAL,PSYCHIC,FAIRY
+#-------------------------------
+[30]
+Name = Spectral
+InternalName = SPECTRAL
+Weaknesses =  LIGHT,ORDER,VOID,OMEGA
+Resistances = POISON,TOXIC,INSECT,MAGMA,BUG,INSECT
+Immunities = NORMAL,FIGHTING,WAR
+#-------------------------------
+[31]
+Name = Chaos
+InternalName = CHAOS
+Weaknesses = WAR,BUG,INSECT,MYTHIC,OMEGA
+Resistances = GHOST,DARK
+Immunities = PSYCHIC,ARCANE
+#-------------------------------
+[32]
+Name = Order
+InternalName = ORDER
+Weaknesses = GRASS,ROCK,CRYSTAL,WATER,OMEGA
+Resistances = GHOST,POISON,PSYCHIC,ARCANE,SPECTRAL,VOID
+Immunities = DARK,CHAOS
+#-------------------------------
+[33]
+Name = Crystal
+InternalName = CRYSTAL
+Weaknesses = FIGHTING,WAR,EARTH,STEEL,METAL,WATER,AQUA,GRASS,NATURE,OMEGA
+Resistances = NORMAL,POISON,LIGHT,ORDER,SOUND
+Immunities = FIRE,FLYING,BUG,DRAGON,GROUND
+#-------------------------------
+[34]
+Name = Earth
+InternalName = EARTH
+Weaknesses = WATER,GRASS,ICE,NATURE,CRYO,OMEGA
+Resistances = POISON,TOXIC,ROCK,CRYSTAL,FIRE,MAGMA
+Immunities = ELECTRIC,PLASMA
+#-------------------------------
+[35]
+Name = Arcane
+InternalName = ARCANE
+Weaknesses = BUG,INSECT,DARK,CHAOS,LIGHT,ORDER,OMEGA
+Resistances = FIGHTING,WAR,PSYCHIC,NORMAL,VOID
+Immunities = GHOST
+#-------------------------------
+[36]
+Name = Wyvern
+InternalName = WYVERN
+Weaknesses = FAIRY,MYTHIC,LIGHT,ORDER,CRYO,OMEGA
+Resistances = FIRE,MAGMA,WATER,AQUA,GRASS,NATURE,ELECTRIC,PLASMA
+#-------------------------------
+[37]
+Name = Mythic
+InternalName = MYTHIC
+Weaknesses = POISON,TOXIC,STEEL,METAL,CYBER,OMEGA
+Resistances = FIGHTING,WAR,BUG,DARK,ORDER,CHAOS
+Immunities = DRAGON,WYVERN,LIGHT
+#-------------------------------
+[38]
+Name = Insect 
+InternalName = INSECT
+Weaknesses = ROCK,CRYSTAL,FIRE,MAGMA,OMEGA
+Resistances = FIGHTING,WAR,GROUND,EARTH,GRASS,NATURE,SOUND
+Immunities = POISON,TOXIC
+#-------------------------------
+[39]
+Name = War
+InternalName = WAR
+Weaknesses = PSYCHIC,ARCANE,FAIRY,MYTHIC,SOUND,OMEGA
+Resistances = ROCK,CRYSTAL,BUG,INSECT,CHAOS,STEEL
+Immunities = DARK
+#-------------------------------
+[40]
+Name = Toxic
+InternalName = TOXIC
+Weaknesses = PSYCHIC,ARCANE,PLASMA,LIGHT,ORDER,OMEGA
+Resistances = FIGHTING,WAR,POISON,BUG,INSECT,GRASS,MYTHIC,NATURE
+[41]
+Name = Omega
+InternalName = OMEGA
+Weaknesses = QMARKS
+Resistances = PSYCHIC,ARCANE,FIGHTING,WAR,NORMAL
+

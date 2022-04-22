@@ -14,8 +14,6 @@ Generation = 6
 [CHARIZARD,1]
 FormName = Mega Charizard X
 MegaStone = CHARIZARDITEX
-Type1 = FIRE
-Type2 = DRAGON
 BaseStats = 78,130,111,100,130,85
 Abilities = TOUGHCLAWS
 HiddenAbility = TOUGHCLAWS
